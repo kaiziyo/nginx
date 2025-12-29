@@ -6,7 +6,7 @@ pipeline {
 
 		stage (docker) {
 			docker run -d -p 8080:80 nginx .
-			docker build -t 
+			docker build -t nginx
 			}		
 
 		stage (deploy){
