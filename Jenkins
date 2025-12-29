@@ -1,7 +1,7 @@
 pipeline {
 	stages {
 		stage (clone) {
-			git clone  https://github.com/kaiziyo/nginx.git
+			git clone "https://github.com/kaiziyo/nginx.git"
 			}
 
 		stage (docker) {
