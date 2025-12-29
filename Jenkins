@@ -1,0 +1,17 @@
+pipeline {
+	stages {
+		stage (clone) {
+			git clone  https://github.com/kaiziyo/nginx.git
+			}
+
+		stage (docker) {
+			docker run -d -p 8080:80 nginx .
+			docker build -t 
+			}		
+
+		stage (deploy){
+			echo "the build is done"
+		}
+
+		}
+	}
